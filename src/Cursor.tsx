@@ -11,7 +11,7 @@ const isValidUrl = (url: string): boolean => {
     try {
         new URL(url, window.location.origin);
         return true;
-    } catch (e) {
+    } catch {
         // console.warn('Invalid imageUrl provided:', url);
         return false;
     }

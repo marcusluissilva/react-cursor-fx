@@ -1,10 +1,9 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Cursor from '../src/Cursor';
-import React from 'react';
 
 describe('Cursor', () => {
     it('applies the correct cursor style', () => {
-        render(<Cursor />);
+        render(<Cursor type="pointer" />);
         expect(document.body.style.cursor).toBe('pointer');
     });
 
